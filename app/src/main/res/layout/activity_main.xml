@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_bg"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    tools:context="com.mg.playerdemo.ui.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <View
+            android:id="@+id/v_act_main_tab_view_center_line"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_act_main_view_tab_audio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/v_act_main_tab_view_center_line"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="音乐"
+            android:clickable="true"
+            android:textColor="@color/gray_white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_act_main_view_tab_video"
+            android:layout_width="0dp"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@id/v_act_main_tab_view_center_line"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="视频"
+            android:textColor="@color/gray_white"
+            android:textSize="15dp" />
+
+        <View
+            android:id="@+id/v_act_main_tab_view_indicate_line"
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/indicate_line" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_act_main_tab_view_count"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

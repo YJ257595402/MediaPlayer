@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 这是有用处的，若没有定义这个，则在手机上运行时，设置 android:fitsSystemWindows="false"无效，会显示状态栏，定义了本主题，状态栏会覆盖在图片上，并且透明-->
+    <style name="AppTheme.Base" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

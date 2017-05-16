@@ -1,0 +1,26 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Base application theme. 若activity需要继承AppCompatActivity，则不能使用这种方式-->
+    <!--<style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>    &lt;!&ndash; 状态栏 &ndash;&gt;-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item> &lt;!&ndash; toolbar &ndash;&gt;-->
+        <!--<item name="colorAccent">@color/colorAccent</item>  &lt;!&ndash; 重点 &ndash;&gt;-->
+    <!--</style>-->
+
+    <style name="AppTheme.Base" parent="AppTheme">
+        <!-- 隐藏actionbar，要使用时，可引入toolbar-->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBar">false</item>
+        <!-- 隐藏标题栏：默认不显示-->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>
